@@ -29,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
         margin: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
         duration: const Duration(seconds: 2),
-        backgroundColor: Colors.deepPurple.withOpacity(0.9),
+        backgroundColor: Colors.deepPurple.withAlpha(230), // fixed deprecation
       ),
     );
   }
