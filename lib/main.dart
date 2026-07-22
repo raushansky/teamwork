@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'register_screen.dart';
-import 'splash_screen.dart';
+import 'login_screen.dart'; // Relative import use kar rahe hain
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Teamwork ',
+      title: 'Teamwork',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      // Seedha LoginScreen load hoga
+      home: const LoginScreen(),
     );
   }
 }

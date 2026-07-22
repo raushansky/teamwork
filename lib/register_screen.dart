@@ -132,9 +132,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text("Already have an account? "),
+                        const Text("Already have an Account "),
                         GestureDetector(
                           onTap: () {
+
                             // Navigate to Login Screen
                             Navigator.pop(context);
                           },
